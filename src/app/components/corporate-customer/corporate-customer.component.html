@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p>corporate-customer</p>
+      <hr>
+
+      <tr *ngFor="let corporateCustomer of corporateCustomers">
+        <td>{{corporateCustomer.taxNumber}}</td>
+      </tr>
+    </div>
+    <div class="col-md-6">
+      <app-individual-customer></app-individual-customer>
+    </div>
+  </div>
+</div>
+

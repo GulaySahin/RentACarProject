@@ -1,1 +1,16 @@
-<p>brand works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p>Araba Markaları</p>
+      <hr>
+      <ul *ngFor="let brand of brands">
+        <li>{{brand.brandId}} :{{brand.brandName}}</li>
+      </ul>
+
+    </div>
+    <div class="col-md-6">
+      <app-color></app-color>
+    </div>
+  </div>
+</div>
+

@@ -1,12 +1,15 @@
-export interface Car {
-  id:number,
-  carName:string,
-  city:string,
-  dailyPrice:number,
-  description:string,
-  findexPoint:number,
-  kilometer:number,
-  modelYear:number,
-  brandId:number,
-  colorId:number
+import { Brand } from "./brand";
+import { Color } from "./color";
+
+export interface Car extends Brand,Color{
+  carId:number;
+  carName:string;
+  modelYear:number;
+  dailyPrice:number;
+  description:string;
+  kilometer:number;
+  city:string;
+  findexPoint:number;
+  carCare: boolean;
+
 }
